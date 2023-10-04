@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
 
-Run `npm i` to install packages and then run `npm start` to host the app.
+Run `npm i` to install packages and then run `npm start` to host the app. If Angular CLI is not installed, run `npm install -g @angular/cli`.
 
 ## Development server
 
