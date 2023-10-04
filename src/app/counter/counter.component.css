@@ -1,0 +1,19 @@
+.wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.counter-title {
+    text-align: center;
+}
+
+.btn {
+    margin: 10px 10px !important;
+}

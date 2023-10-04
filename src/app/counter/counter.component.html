@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title class="counter-title">{{timeRemaining$ | async}}</mat-card-title>
+      <mat-card-subtitle>seconds remaining</mat-card-subtitle>
+      <mat-card-subtitle *ngIf="counterTimeout !== null">Decreasing starts in {{counterTimeout}} s.</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions class="button-row">
+      <button mat-raised-button class="btn" value="counterSteps.One" [disabled]="!(isOneStepEnabled$ | async)"
+        (click)="incrementCounter(counterSteps.One)">
+        + {{counterSteps.One}}
+      </button>
+      <button mat-raised-button class="btn" value="counterSteps.Two" [disabled]="!(isTwoStepEnabled$ | async)"
+        (click)="incrementCounter(counterSteps.Two)">
+        + {{counterSteps.Two}}
+      </button>
+      <button mat-raised-button class="btn" value="counterSteps.Three" [disabled]="!(isThreeStepEnabled$ | async)"
+        (click)="incrementCounter(counterSteps.Three)">
+        + {{counterSteps.Three}}
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
